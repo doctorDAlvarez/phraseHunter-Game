@@ -78,7 +78,7 @@ button {
   height: 100%;
   max-height: 900px;
   text-align: center;
-  background-color: #4c2c2c69
+  background-color: #bd90b2de
 }
 
 .section {
@@ -118,7 +118,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #768588;
+  background-color: #a74466;
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -213,6 +213,6 @@ button {
 }
 
 .key:hover {
-  border: 2px 4px;
-  border-color: #a0e384;
+  border: 6px 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

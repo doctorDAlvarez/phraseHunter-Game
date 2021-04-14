@@ -26,12 +26,11 @@
     }
 
    handleInteraction( key_button ) {
-     // gets keyboard event (guess) check if match any letter.
      key_button.disabled = true;
      if ( this.activePhrase.checkLetter( key_button.textContent ) ) {
         key_button.classList.add("chosen");
         this.activePhrase.showMatchedLetter( key_button.textContent );
-        if (this.checkForWin()) {
+        if ( this.checkForWin() ) {
           this.gameOver();
         }
      } else {
@@ -41,9 +40,8 @@
    }
 
    removeLife() {
-     const score = document.querySelector("ol");
-     score.children[this.missed].firstElementChild.src =
-     "images/lostHeart.png";
+     const score = document.querySelectorAll(".tries");
+     score[this.missed].firstElementChild.src = "images/lostHeart.png";
      this.missed += 1;
      if (this.missed === 5) {
        this.gameOver();
@@ -52,14 +50,40 @@
    }
 
    checkForWin() {
-     //check if all the letters of activePhrase has been revealed.
-
+     const hide_letters = document.querySelectorAll(".hide");
+     if ( hide_letters.length === 0 ) {
+       return true;
+     } else {
+       return false;
+     }
    }
 
    gameOver() {
      //displays original overlay.
-     // update h1 element with a friendly message plus replace start css class with win or lose class.
+     document.getElementById("overlay").style.display = "flex";
+     if ( this.checkForWin() ) {
+        document.getElementById("overlay").className = "win";
+        document.querySelector("#game-over-message").textContent = "Congratulations Programmer!";
+        this.resetGame();
+     } else {
+       document.getElementById("overlay").className = "lose";
+       document.querySelector("#game-over-message").textContent = "Oops try harder!";
+       this.resetGame();
+       }
    }
 
+   resetGame() {
+     const placeHolders = document.querySelector("ul");
+     const score = document.querySelectorAll(".tries");
+     const keys = document.querySelectorAll(".chosen ,.wrong, .key");
+     this.missed = 0;
+     placeHolders.innerHTML = "";
+     score.forEach( elem => elem.firstElementChild.src = "images/liveHeart.png");
+     keys.forEach( key => {
+          key.disabled = false;
+          key.className = "key";
+     });
 
- }
+   }
+
+}

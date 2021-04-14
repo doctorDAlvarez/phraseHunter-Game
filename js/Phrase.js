@@ -11,8 +11,7 @@ class Phrase {
 
    addPhraseToDisplay() {
      const phrase_div = document.querySelector("#phrase");
-     let phrase = new_game.activePhrase.phrase;
-     let phrase_arr = phrase.split("");
+     let phrase_arr = this.phrase.split("");
      phrase_arr.forEach( char => {
         if (char === " ") {
           phrase_div.firstElementChild.insertAdjacentHTML("beforeend", `
