@@ -63,7 +63,7 @@
      document.getElementById("overlay").style.display = "flex";
      if ( this.checkForWin() ) {
         document.getElementById("overlay").className = "win";
-        document.querySelector("#game-over-message").textContent = "Congratulations Programmer!";
+        document.querySelector("#game-over-message").textContent = "You win, Congratulations!";
         this.resetGame();
      } else {
        document.getElementById("overlay").className = "lose";

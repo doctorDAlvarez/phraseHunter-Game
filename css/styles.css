@@ -4,7 +4,7 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  --color-win: #bfcf78fc;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -39,7 +39,6 @@ h2 {
   margin: 0;
   text-transform: uppercase;
   font-size: var(--font-size-large);
-  margin: 0;
 }
 
 h1 {
@@ -68,7 +67,7 @@ button {
 #btn__reset:hover {
 	width: 300px;
 	margin: 0 auto;
-  background-color: #6df035;
+  background-color: #75eca5;
 }
 
 .main-container {
@@ -78,7 +77,7 @@ button {
   height: 100%;
   max-height: 900px;
   text-align: center;
-  background-color: #bd90b2de
+  background-color: #90b6bdd1;
 }
 
 .section {
@@ -94,6 +93,7 @@ button {
 
 .header {
   color: #3a3f58;
+  text-shadow: 2px 2px grey;
 }
 
 
@@ -118,7 +118,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #a74466;
+  background-color: #53bd59;
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -185,9 +185,12 @@ button {
 }
 
 .title {
-  color: #FFF;
+  color: #75eca5;
+  animation: mymove 2s infinite;
 }
-
+@keyframes mymove {
+  50% {color: grey;}
+}
 .start {
   background-color: #3a3f58;
 }
@@ -205,11 +208,16 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color: #bc4848;
 }
 
 .lose a {
   color: var(--color-lose);
+}
+
+.key {
+  border-radius: 20%;
+  transition: color 1s;
 }
 
 .key:hover {
