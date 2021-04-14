@@ -17,6 +17,7 @@ qwerty.addEventListener("click", event => {
   }
 });
 
+//
 document.addEventListener("keydown", event => {
     button = arr_keys.filter( button => button.textContent === event.key);
     if ( !(button[0] === undefined) ) {

@@ -2,16 +2,14 @@
  * Project 4 - OOP Game App
  * Game.js */
 
-
-
 class Game {
   constructor() {
     this.missed = 0;
     this.phrases = [
       "JavaScript Rocks",
       "Do Not Repeat Yourself",
-      "Python or JavaScript",
-      "Animal Planet",
+      "Python vs JavaScript",
+      "Slack channel",
       "Stucked in unit four"
     ].map(phrase => new Phrase(phrase));
     this.activePhrase = null;
