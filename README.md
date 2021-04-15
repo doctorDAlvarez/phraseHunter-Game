@@ -42,4 +42,4 @@ Please feel free to clone it, test it and colaborate with anything you might thi
 ## Credits
 thanks to teamTreeHouse team and slack community, specially @lee for the review and feedback before submitting.
 
-TREEHOUSE FSJS techDegree © [Diego ALvarez @doc]()
+TREEHOUSE FSJS techDegree © [Diego ALvarez @doctorDAlvarez]()
