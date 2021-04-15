@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
 
 /* Variables */
-
 :root {
   --color-win: #bfcf78fc;
   --color-lose: #D94545;
@@ -17,7 +16,6 @@
 }
 
 /* main */
-
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -60,13 +58,13 @@ button {
 }
 
 #btn__reset {
-	width: 200px;
-	margin: 0 auto;
+  width: 200px;
+  margin: 0 auto;
 }
 
 #btn__reset:hover {
-	width: 300px;
-	margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
   background-color: #75eca5;
 }
 
@@ -77,7 +75,7 @@ button {
   height: 100%;
   max-height: 900px;
   text-align: center;
-  background-color: #90b6bdd1;
+  background-color: #8a9da0d1;
 }
 
 .section {
@@ -85,20 +83,24 @@ button {
   padding: 10px;
 }
 
-#phrase ul li{
+#phrase ul li {
   margin-top: 15px;
 }
 
 /* Title */
-
 .header {
   color: #3a3f58;
   text-shadow: 2px 2px grey;
+  animation: mymove2 2s infinite;
 }
 
+@keyframes mymove2 {
+  50% {
+    color: grey;
+  }
+}
 
 /* Phrase */
-
 .letter {
   font-size: var(--font-size-medium);
   height: 65px;
@@ -114,8 +116,6 @@ button {
   width: 15px;
 }
 
-
-
 .show {
   color: #fff;
   background-color: #53bd59;
@@ -129,10 +129,7 @@ button {
   animation-duration: .5s;
 }
 
-
 /* Keyboard */
-
-
 .keyrow {
   display: flex;
   justify-content: center;
@@ -146,8 +143,8 @@ button {
 }
 
 .wrong {
-    background: #fbf9f8;
-    color: #dad5d5;
+  background: #fbf9f8;
+  color: #dad5d5;
 }
 
 .btn__reset {
@@ -167,10 +164,7 @@ button {
   border-right: solid 3px rgba(0, 0, 0, 0);
 }
 
-
-
 /* Overlay */
-
 #overlay {
   display: flex;
   flex-direction: column;
@@ -188,9 +182,13 @@ button {
   color: #75eca5;
   animation: mymove 2s infinite;
 }
+
 @keyframes mymove {
-  50% {color: grey;}
+  50% {
+    color: #e09696;
+  }
 }
+
 .start {
   background-color: #3a3f58;
 }

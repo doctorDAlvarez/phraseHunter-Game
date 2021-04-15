@@ -13,16 +13,16 @@ start_button.addEventListener("click", event => {
 
 qwerty.addEventListener("click", event => {
   if (event.target.tagName == "BUTTON") {
-    new_game.handleInteraction( event.target );
+    new_game.handleInteraction(event.target);
   }
 });
 
 //
 document.addEventListener("keydown", event => {
-    button = arr_keys.filter( button => button.textContent === event.key);
-    if ( !(button[0] === undefined) ) {
-      if ( !button[0].disabled ){
-          new_game.handleInteraction( button[0] );
-      }
+  button = arr_keys.filter(button => button.textContent === event.key);
+  if (!(button[0] === undefined)) {
+    if (!button[0].disabled) {
+      new_game.handleInteraction(button[0]);
     }
+  }
 });
