@@ -1,26 +1,34 @@
 ## phraseHunter - theGame.
-This is project 4 of my fullStackJavaScript techDegree, it´s a word guessing game, coded entirely in javaScript.
+This is project 4 of my fullStackJavaScript techDegree, it´s a word guessing game, coded entirely in javaScript, with OOP.
 
 ## Motivation
-to create a browser-based game using the concepts i learn of object oriented programming and functional programming.
+to create a browser-based game using the concepts i learned of object oriented programming and functional programming.
 Skills learned and practice:
 * creating Classes.
-* interacting with the DOM object and the properties and methods from the classes build.
-* 
+* interacting with DOM object, properties and methods from the classes build.
+* using <code>.filter(), .forEach(), .map(), .reduce()</code>
+* CSS decoration.
+* keyboard interrupts and event handling.
+* a lot more fun!!..
+
 ## Build status
 Up and Running good. ;)
 
 ## Code style
-vanilla JavaScript.
+HTML - CSS
+vaniLLa JavaScript.
 
 ## Tech/framework used
 No frameworks nor plugins
 
 ## Features
-* real-time error messages: <code>input</code> event listeners implemented along with validation helper functions in all required fields, except the activities registry. This was done for better user experience in error checking status. Checking errors only with the submit event is more error prone, and as the statistical studies suggest more people ends abandoning the form, instead of completing it.
-
-* conditional error messages: the **email** field has two possible error messages, one if no email was entered, and another if the format is not correct.
-
+CSS:
+* **[.title]** and **[.header]** classes custom pulse animation, using @keyframes.
+* **#button_reset** on hover made bigger and with cool color
+* keyboard buttons made more fun, with dynamic shadowing, and animated transitions.
+* background colors customized.
+* adjusted keys border radius property.
+  
 ## Installation
 Just download the files and open index.html on any tested browser.
 
