@@ -6,7 +6,6 @@
 ================================================*/
 //Game.js
 
-// declaring the Game class.
 class Game {
   constructor() {
     this.missed = 0;
