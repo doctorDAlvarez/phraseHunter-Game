@@ -1,5 +1,5 @@
 ## phraseHunter - theGame.
-This is project 4 of my fullStackJavaScript techDegree, it´s a word guessing game, coded entirely in javaScript, with OOP.
+This is project 4 of my treeHouse fullStackJavaScript techDegree, it´s a word guessing game, coded entirely in javaScript, with OOP.
 
 ## Motivation
 to create a browser-based game using the concepts i learned of object oriented programming and functional programming.
@@ -15,7 +15,7 @@ Skills learned and practice:
 Up and Running good. ;)
 
 ## Code style
-HTML - CSS
+HTML - CSS <br>
 vaniLLa JavaScript.
 
 ## Tech/framework used
@@ -23,12 +23,12 @@ No frameworks nor plugins
 
 ## Features
 CSS:
-* **[.title]** and **[.header]** classes custom pulse animation, using @keyframes.
-* **#button_reset** on hover made bigger and with cool color
-* keyboard buttons made more fun, with dynamic shadowing, and animated transitions.
+* **.title** and **.header** classes custom pulse animation, using @keyframes.
+* **#button_reset** on hover made bigger and cool.
+* keyboard buttons made more fun, dynamic shadowing, and animated transitions.
 * background colors customized.
 * adjusted keys border radius property.
-  
+
 ## Installation
 Just download the files and open index.html on any tested browser.
 
