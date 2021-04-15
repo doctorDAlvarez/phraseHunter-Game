@@ -10,7 +10,9 @@
 const new_game = new Game();
 const start_button = document.querySelector("#btn__reset");
 const qwerty = document.querySelector("#qwerty");
-// here we need to 'typecast' the nodeList returned by querySelectorAll() to an Array so we can use Array cool new methods.(.filter())
+
+// here we need to 'typecast' the nodeList returned by querySelectorAll()
+// to an Array so we can use Array cool new methods.(like .filter())
 const key_buttons = document.querySelectorAll(".key");
 const arr_keys = Array.from( key_buttons );
 
@@ -24,10 +26,15 @@ qwerty.addEventListener( "click", event => {
   }
 });
 
-
+/**
+* Keydown event handler:
+* Callback Function: keyboard-button decoding feature.
+* @param {keydown-event} event - filters the array of buttons elements with the * event.key property, then checks if the key was already pressed evaluating its * disabled property. undefined is check to repair a minor console bug with no
+* functionality repercusions.
+*/
 document.addEventListener("keydown", event => {
-  button = arr_keys.filter(button => button.textContent === event.key);
-  if ( !(button[0] === undefined) ) {
+  button = arr_keys.filter( button => button.textContent === event.key );
+  if ( !( button[0] === undefined ) ) {
     if ( !button[0].disabled ) {
       new_game.handleInteraction( button[0] );
     }
