@@ -3,7 +3,7 @@
 
 /* Variables */
 :root {
-  --color-win: #bfcf78fc;
+  --color-win: #679e6f; /*changed for better readability*/
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -65,7 +65,7 @@ button {
 #btn__reset:hover {
   width: 300px;
   margin: 0 auto;
-  background-color: #75eca5;
+  background-color: #75eca5; /*custom change*/
 }
 
 .main-container {
@@ -94,7 +94,7 @@ button {
   animation: mymove2 2s infinite;
 }
 
-@keyframes mymove2 {
+@keyframes mymove2 {    /*custom pulse animation*/
   50% {
     color: grey;
   }
@@ -183,7 +183,7 @@ button {
   animation: mymove 2s infinite;
 }
 
-@keyframes mymove {
+@keyframes mymove { /*custom animation*/
   50% {
     color: #e09696;
   }
@@ -218,7 +218,7 @@ button {
   transition: color 1s;
 }
 
-.key:hover {
+.key:hover {         /*custom change on hover*/
   border: 6px 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
